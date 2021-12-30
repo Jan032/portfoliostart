@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid bg-secondary border-top border-success">
+<br><br>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card border-success border-3 mb-3 text-success bg-dark mb-3 h-90">
+          <img src="static/images/scissors.jpg" class="card-img-top" alt="...">
+
+          <div class="card-body">
+            <h5 class="card-title">Chuppa</h5>
+            <p class="card-text">Example of Bootstrap Webpage - Hair salon</p>
+            <a href="/Chuppa" class="btn btn-success hover">Get your hair done</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">last updated 2.12.2021</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-success border-3 text-success bg-dark mb-3 h-90">
+          <img src="static/images/fejkf.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">FejkBuk</h5>
+            <p class="card-text">Profile page with custom CSS</p>
+            <a href="/FejkBuk" class="btn btn-success hover">View Profile</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">last updated 2.12.2021</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-success border-3 text-success bg-dark mb-3 h-90">
+          <img src="static/images/questionmark.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<div class="container-fluid bg-dark border-success border-3 border-top">
+
+  <br>
+  <p class="text-success text-center display-4 font-monospace">Contact me</p>
+  <div class="container">
+    <form method="post" action="/contact">
+      <div class="col-md-4 offset-md-4 form-group">
+        <input type="text" name="contact-name" class="form-control" placeholder="Enter your name">
+        <input type="text" name="contact-email" class="form-control mt-2" placeholder="Enter your E-mail">
+        <textarea name="contact-message" class="form-control mt-2" placeholder="Enter your message" rows="5"></textarea>
+        <button class="btn btn-success form-control mt-2">Send</button>
+        <br><br>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+{% endblock content %}
